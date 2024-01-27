@@ -292,6 +292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
+    - target: {fileID: 6320493412701739933, guid: 1ce8c624e3400ea4ab09a946c894bf59, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -448,6 +452,7 @@ GameObject:
   - component: {fileID: 1404721903}
   - component: {fileID: 1404721902}
   - component: {fileID: 1404721904}
+  - component: {fileID: 1404721905}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -504,6 +509,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 1
   car: {fileID: 3569120859697904057, guid: 7694740fb96974763bd9c6ebc0f1ff7a, type: 3}
+  timer: 0
+--- !u!114 &1404721905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404721901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4e89c5bd9e39c419d5af29b0192df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 10
+  girl: {fileID: 320784976950436497, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
   timer: 0
 --- !u!1 &1633113890
 GameObject:
@@ -953,11 +973,72 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 3569120859697904057, guid: 7694740fb96974763bd9c6ebc0f1ff7a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7694740fb96974763bd9c6ebc0f1ff7a, type: 3}
+--- !u!1001 &7085331438321260381
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 320784976950436497, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_Name
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765832916623639806, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4398a70c26808a4fb251dbcd452960f, type: 3}
 --- !u!1001 &7814422366406671204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1026,3 +1107,4 @@ SceneRoots:
   - {fileID: 7814422366406671204}
   - {fileID: 1404721903}
   - {fileID: 6492272287220635098}
+  - {fileID: 7085331438321260381}

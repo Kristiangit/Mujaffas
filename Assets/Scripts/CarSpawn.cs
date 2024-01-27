@@ -14,7 +14,6 @@ public class CarSpawn : MonoBehaviour
         timer = timer + Time.deltaTime;
         if (timer >= spawnRate)
         {
-            // Debug.Log("money spawned");
             float xpos = Random.Range(-1.4f, 0f);
 
             GameManager.Spawn(car, xpos, 5f, Quaternion.identity);

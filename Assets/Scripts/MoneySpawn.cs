@@ -19,6 +19,7 @@ public class MoneySpawn : MonoBehaviour
         timer = timer + Time.deltaTime;
         if (timer >= spawnRate)
         {
+            Debug.Log("money spawned");
             int index = Random.Range(0, 3);
             float xpos = Random.Range(-3.5f, 3.5f);
 

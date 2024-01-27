@@ -7,7 +7,8 @@ TagManager:
   - Money100
   - Money200
   - Money150
-  - Money500
+  - Money50
+  - Money250
   layers:
   - Default
   - TransparentFX

@@ -13,5 +13,10 @@ public class ItemScroller : MonoBehaviour
         pos.y -= velocity * Time.deltaTime;
         
         transform.position = pos;
+
+        if (transform.position.y < -5f)
+        {
+            Destroy(gameObject);
+        }
     }
 }

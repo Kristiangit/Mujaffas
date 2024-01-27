@@ -86,4 +86,9 @@ public class GameManager : Singleton<GameManager>
         else
             waitTime = time;
     }
+
+    public static void Spawn(GameObject prefab, float xpos, float ypos, Quaternion rotation)
+    {
+        Instantiate(prefab, new Vector3(xpos, ypos, 0f), rotation);
+    }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoneySpawn : MonoBehaviour
+public class CarSpawn : MonoBehaviour
 {
     [SerializeField] private float spawnRate = 1.0f;
     [SerializeField] private GameObject[] moneys = {};

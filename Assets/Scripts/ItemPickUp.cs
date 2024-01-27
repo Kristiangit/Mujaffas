@@ -9,10 +9,15 @@ public class ItemPickUp : MonoBehaviour
         
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag.Contains("Money"))
         {
             value = int.Parse(other.gameObject.tag.Remove(0, 5));
             money = money + value;
+            Destroy(other.gameObject);
+        }
+        else if (other.gameObject.tag != "Untagged")
+        {
             Destroy(other.gameObject);
         }
     }

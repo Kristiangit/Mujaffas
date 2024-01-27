@@ -20,7 +20,7 @@ public class MoneySpawn : MonoBehaviour
         if (timer >= spawnRate)
         {
             // Debug.Log("money spawned");
-            int index = Random.Range(0, 3);
+            int index = Random.Range(0, moneys.Length);
             float xpos = Random.Range(-3.5f, 3.5f);
 
             GameManager.Spawn(moneys[index], xpos, 5f, Quaternion.identity);

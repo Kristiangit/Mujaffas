@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class CarSpawn : MonoBehaviour
 {
-    [SerializeField] private float spawnRate = 1.0f;
-    [SerializeField] private GameObject[] moneys = {};
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float spawnRate = 2.0f;
+    [SerializeField] private GameObject car;
 
     // Update is called once per frame
     [SerializeField] private float timer = 0f;
@@ -20,12 +15,11 @@ public class CarSpawn : MonoBehaviour
         if (timer >= spawnRate)
         {
             // Debug.Log("money spawned");
-            int index = Random.Range(0, 3);
-            float xpos = Random.Range(-3.5f, 3.5f);
+            float xpos = Random.Range(-1.4f, 0f);
 
-            GameManager.Spawn(moneys[index], xpos, 5f, Quaternion.identity);
+            GameManager.Spawn(car, xpos, 5f, Quaternion.identity);
             timer = 0f;
-            spawnRate = Random.Range(0.5f, 2.5f);
+            spawnRate = Random.Range(5f, 7f);
         }
 
     }

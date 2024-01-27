@@ -9,6 +9,8 @@ TagManager:
   - Money150
   - Money50
   - Money250
+  - Money500
+  - Obstacle
   layers:
   - Default
   - TransparentFX

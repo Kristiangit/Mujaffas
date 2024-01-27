@@ -13,9 +13,9 @@ public class MoneySpawn : MonoBehaviour
     }
 
     // Update is called once per frame
+    [SerializeField] private float timer = 0f;
     void Update()
     {
-        float timer = 0;
         timer = timer + Time.deltaTime;
         if (timer >= spawnRate)
         {
@@ -23,13 +23,13 @@ public class MoneySpawn : MonoBehaviour
             int index = Random.Range(0, 3);
             float xpos = Random.Range(-3.5f, 3.5f);
 
-            Spawn(moneys[index], xpos, 1.9f);
+            Spawn(moneys[index], xpos, 1f, Quaternion.Euler(new Vector3(90, 0, 0)));
             timer = 0f;
         }
     }
         
-    void Spawn(GameObject prefab, float xpos, float ypos)
+    void Spawn(GameObject prefab, float xpos, float ypos, Quaternion rotation)
     {
-        Instantiate(prefab, new Vector3(xpos, ypos, 0f), Quaternion.identity);
+        Instantiate(prefab, new Vector3(xpos, ypos, 0f), rotation);
     }
 }

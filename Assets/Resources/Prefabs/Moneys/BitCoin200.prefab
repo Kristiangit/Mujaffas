@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3809519980222383605}
   - component: {fileID: 2730295146346776087}
   m_Layer: 0
-  m_Name: 'BitCoin200         '
+  m_Name: BitCoin200
   m_TagString: Money200
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

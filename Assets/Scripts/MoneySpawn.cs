@@ -19,12 +19,18 @@ public class MoneySpawn : MonoBehaviour
         timer = timer + Time.deltaTime;
         if (timer >= spawnRate)
         {
-            Debug.Log("money spawned");
+            // Debug.Log("money spawned");
             int index = Random.Range(0, 3);
             float xpos = Random.Range(-3.5f, 3.5f);
 
-            Spawn(moneys[index], xpos, 1f, Quaternion.Euler(new Vector3(90, 0, 0)));
+            Spawn(moneys[index], xpos, 5f, Quaternion.Euler(new Vector3(90, 0, 0)));
             timer = 0f;
+            spawnRate = Random.Range(0.5f, 2.5f);
+        }
+
+        if (transform.position.y < -5f)
+        {
+            Destroy(gameObject);
         }
     }
         

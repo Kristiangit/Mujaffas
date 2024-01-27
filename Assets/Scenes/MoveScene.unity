@@ -988,24 +988,16 @@ PrefabInstance:
       value: BitCoin500
       objectReference: {fileID: 0}
     - target: {fileID: 7113720737013527533, guid: 882e8a4dacb417b47a2e6c49d365e3a0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7113720737013527533, guid: 882e8a4dacb417b47a2e6c49d365e3a0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7113720737013527533, guid: 882e8a4dacb417b47a2e6c49d365e3a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.69
+      value: -7.65
       objectReference: {fileID: 0}
     - target: {fileID: 7113720737013527533, guid: 882e8a4dacb417b47a2e6c49d365e3a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 7113720737013527533, guid: 882e8a4dacb417b47a2e6c49d365e3a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7113720737013527533, guid: 882e8a4dacb417b47a2e6c49d365e3a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1049,14 +1041,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1619565138255555313, guid: eb02b00bdf130e14da273afe48048d22, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1619565138255555313, guid: eb02b00bdf130e14da273afe48048d22, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1619565138255555313, guid: eb02b00bdf130e14da273afe48048d22, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.61
       objectReference: {fileID: 0}
@@ -1094,10 +1078,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1619565138255555313, guid: eb02b00bdf130e14da273afe48048d22, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1619565138255555313, guid: eb02b00bdf130e14da273afe48048d22, type: 3}
-      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5594490375211975677, guid: eb02b00bdf130e14da273afe48048d22, type: 3}
@@ -1198,6 +1178,6 @@ SceneRoots:
   - {fileID: 9190316898261965427}
   - {fileID: 933101504069497241}
   - {fileID: 7098158611840046729}
+  - {fileID: 6054049600962747312}
   - {fileID: 344405826}
   - {fileID: 1560516594}
-  - {fileID: 6054049600962747312}

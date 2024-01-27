@@ -21,29 +21,31 @@ public class ItemPickUp : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        isMoney = false;
         if (other.CompareTag("Money100"))
         {
             Debug.Log("Picked up 100");
             value = 100;
             isMoney = true;
         }
-        if (other.CompareTag("Money200"))
+        else if (other.CompareTag("Money200"))
         {
             Debug.Log("Picked up 200");
             value = 200;
             isMoney = true;
         }
-        if (other.CompareTag("Money500"))
+        else if (other.CompareTag("Money500"))
         {
             Debug.Log("Picked up 500");
             value = 500;
             isMoney = true;
         }
+
         if (isMoney)
         {
             money = money + value;
             Destroy(other.gameObject);
+            isMoney = false;
+
         }
     }
 }

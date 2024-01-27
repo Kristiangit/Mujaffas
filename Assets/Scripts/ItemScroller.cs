@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class ItemScroller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float velocity = 1f;
 
     // Update is called once per frame
     void Update()
     {
+        Vector3 pos = transform.position;
+        pos.y -= velocity * Time.deltaTime;
         
+        transform.position = pos;
     }
 }

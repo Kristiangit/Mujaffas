@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GirlSpawn : MonoBehaviour
 {
-    [SerializeField] private float spawnRate = 10.0f;
-    [SerializeField] private GameObject girl;
+    [SerializeField] private float spawnRate = 5.0f;
+    [SerializeField] private GameObject[] girl;
 
     // Update is called once per frame
     [SerializeField] private float timer = 0f;
@@ -21,11 +21,11 @@ public class GirlSpawn : MonoBehaviour
             {
                 xpos -= 6.2f;
             }
+            int index = Random.Range(0, girl.Length);
 
-
-            GameManager.Spawn(girl, xpos, 5f, Quaternion.identity);
+            GameManager.Spawn(girl[index], xpos, 5f, Quaternion.identity);
             timer = 0f;
-            spawnRate = Random.Range(10f, 20f);
+            spawnRate = Random.Range(7f, 20f);
         }
 
     }

@@ -23,7 +23,6 @@ public class GirlBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("collision");
             gameObject.GetComponent<GirlAnimation>().enabled = true;
         }
     }

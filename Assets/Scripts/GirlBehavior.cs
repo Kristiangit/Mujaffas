@@ -24,6 +24,7 @@ public class GirlBehavior : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gameObject.GetComponent<GirlAnimation>().enabled = true;
+            gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }
 }

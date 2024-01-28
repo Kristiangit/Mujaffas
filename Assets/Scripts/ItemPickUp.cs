@@ -7,7 +7,13 @@ public class ItemPickUp : MonoBehaviour
     public int health = 3;
     public int money = 0;
     private int value = 0;
+    public AudioSource audioSource;
+    [SerializeField] private AudioClip[] voices;
         
+    void Start()
+    {
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
     void OnTriggerEnter(Collider other)
     {
         // Debug.Log(other.gameObject.tag);
@@ -19,6 +25,8 @@ public class ItemPickUp : MonoBehaviour
         }
         if (other.CompareTag("Girl"))
         {
+
+            audioSource.PlayOneShot(voices[Random.Range(0, voices.Length)], 1);
             IEnumerator coroute = Wait5();
             StartCoroutine(coroute);
         }
@@ -32,7 +40,7 @@ public class ItemPickUp : MonoBehaviour
     IEnumerator Wait5()
     {
         Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(3f);
         Time.timeScale = 1f;
     }
 }

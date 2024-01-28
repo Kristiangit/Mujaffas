@@ -37,7 +37,7 @@ public class ItemPickUp : MonoBehaviour
             Destroy(other.gameObject);
             if (health == 0)
             {
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("End");
             }
 
         }

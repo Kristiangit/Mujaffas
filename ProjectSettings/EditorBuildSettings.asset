@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MoveScene.unity
     guid: b3e75b741d1d25f448832ff11489f6f6
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 097304559e64e4dda9f296d71f9aac5a
   m_configObjects: {}

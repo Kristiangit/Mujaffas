@@ -16,6 +16,14 @@ public class ItemPickUp : MonoBehaviour
             money = money + value;
             Destroy(other.gameObject);
         }
+        if (other.CompareTag("Girl"))
+        {
+            Debug.Log("girl");
+            IEnumerator coroute = Wait5();
+            StartCoroutine(coroute);
+            // Debug.Log("restart");
+
+        }
         else if (other.gameObject.tag != "Untagged")
         {
             Destroy(other.gameObject);
@@ -23,5 +31,13 @@ public class ItemPickUp : MonoBehaviour
     }
     void OnCollisionEnter(Collision other) {
         Debug.Log(other.gameObject.tag);
+    }
+
+    IEnumerator Wait5()
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(5f);
+        // Debug.Log("rerestart 5");
+        Time.timeScale = 1f;
     }
 }

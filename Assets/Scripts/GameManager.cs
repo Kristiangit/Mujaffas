@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
+    public static float velocity = 2f;
     // Hit stop time
     private static float waitTime = 0.0f;
 

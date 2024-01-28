@@ -11,6 +11,7 @@ TagManager:
   - Money250
   - Money500
   - Obstacle
+  - Girl
   layers:
   - Default
   - TransparentFX

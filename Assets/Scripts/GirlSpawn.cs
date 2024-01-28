@@ -14,12 +14,12 @@ public class GirlSpawn : MonoBehaviour
         timer = timer + Time.deltaTime;
         if (timer >= spawnRate)
         {
-            float xpos = Random.Range(2.6f, 3.5f);
+            float xpos = Random.Range(2.7f, 3.4f);
             int left = Random.Range(0, 2);
 
             if (left == 1)
             {
-                xpos -= 5.2f;
+                xpos -= 6.2f;
             }
 
 

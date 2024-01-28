@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ItemScroller : MonoBehaviour
 {
-    [SerializeField] private float velocity = 1f;
+    public float velocity = GameManager.velocity;
+
 
     // Update is called once per frame
     void Update()

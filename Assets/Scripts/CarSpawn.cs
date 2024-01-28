@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarSpawn : MonoBehaviour
 {
-    [SerializeField] private float spawnRate = 2.0f;
+    [SerializeField] private float spawnRate = 3.0f;
     [SerializeField] private GameObject car;
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class CarSpawn : MonoBehaviour
 
             GameManager.Spawn(car, xpos, 5f, Quaternion.identity);
             timer = 0f;
-            spawnRate = Random.Range(5f, 7f);
+            spawnRate = Random.Range(4f, 7f);
         }
 
     }

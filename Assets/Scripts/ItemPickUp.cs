@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ItemPickUp : MonoBehaviour
 {
@@ -34,6 +35,11 @@ public class ItemPickUp : MonoBehaviour
         {
             health -= 1;
             Destroy(other.gameObject);
+            if (health == 0)
+            {
+                SceneManager.LoadScene("Menu");
+            }
+
         }
     }
 

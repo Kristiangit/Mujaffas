@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Lives : MonoBehaviour
 {
     public int health;
     public int money;
     [SerializeField] private GameObject player;
+    [SerializeField] private Text m_text;
         
     void Update()
     {
@@ -22,6 +24,7 @@ public class Lives : MonoBehaviour
             gameObject.transform.GetChild(i).gameObject.SetActive(true);
         }
 
-        gameObject.transform.GetChild(3).GetChild(1).gameObject.GetComponent<TextMesh>().text = moneys;
+        m_text.text = moneys;
+        // gameObject.transform.GetChild(3).GetChild(1).GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = moneys;
     }
 }

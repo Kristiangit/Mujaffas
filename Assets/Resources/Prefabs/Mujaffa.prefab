@@ -117,8 +117,8 @@ MonoBehaviour:
   money: 0
   audioSource: {fileID: 0}
   voices:
-  - {fileID: 8300000, guid: 63626f10693f95a44a4354b14cb1cf61, type: 3}
   - {fileID: 8300000, guid: 02a20a58d1eb1c34d9159a38ce89b3ec, type: 3}
+  - {fileID: 8300000, guid: 63626f10693f95a44a4354b14cb1cf61, type: 3}
   - {fileID: 8300000, guid: 0c26eb5217e7f2e48a62cf429f66f70d, type: 3}
 --- !u!65 &6425107669481753489
 BoxCollider:
